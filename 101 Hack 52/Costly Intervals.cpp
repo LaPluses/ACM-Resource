@@ -36,7 +36,7 @@ int main( int argc , char * argv[] ){
 	scanf( "%d%d" , & n , & K );
 	Len[0] = -1;
 	for(int i = 1 ; i <= n ; ++ i){
-		Len[i] = Len[i >> 1] + 1;
+		Len[i] = Len[i >> 1] + 1 ;
 		scanf( "%d" , A + i );
 		OR[i][0] = AND[i][0] = MX[i][0] = MI[i][0] = A[i];
 	}
